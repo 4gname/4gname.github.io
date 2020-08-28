@@ -2158,16 +2158,16 @@ body.mobile-nav-active #mobile-nav-toggle {
     transform: rotate(-90deg); }
     @media (min-width: 2101px) {
       .home-banner-area .social-icons {
-        left: 50%; } }
+        left: 32%; } }
     @media (max-width: 1480px) {
       .home-banner-area .social-icons {
-        left: 50%; } }
+        left: 32%; } }
     @media (max-width: 1350px) {
       .home-banner-area .social-icons {
         left: 32%; } }
     @media (max-width: 1199px) {
       .home-banner-area .social-icons {
-        left: 50%; } }
+        left: 32%; } }
     @media (max-width: 1024px) {
       .home-banner-area .social-icons {
         display: none; } }
