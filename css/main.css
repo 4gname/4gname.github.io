@@ -3216,16 +3216,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 ################
 */
 .footer-area {
-  background: #04091e; }
+ background: #17417f;
+   }
   .footer-area h6 {
     margin-bottom: 25px;
     font-size: 18px;
     font-weight: 600;
-    color: #ffffff; }
+    color: #fff; }
 
 .copy-right-text i,
 .copy-right-text a {
-  color: #17417f; }
+  color: #fff; }
 
 .footer-social a {
   padding-right: 25px;
@@ -3234,9 +3235,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
   .footer-social a:hover i {
-    color: #17417f; }
+    color: #fff; }
 .footer-social i {
-  color: #cccccc;
+  color: #fff;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -3249,7 +3250,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: none;
   width: 80% !important;
   font-weight: 300;
-  background: #f9f9ff;
+  background: #fff;
   padding-left: 20px;
   border-radius: 0;
   font-size: 14px;
@@ -3260,7 +3261,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     box-shadow: none;
     border: 1px solid #f9f9ff; }
 .single-footer-widget .bb-btn {
-  color: #17417f;
+  color: #fff;
   color: #fff;
   font-weight: 300;
   border-radius: 0;
@@ -3276,7 +3277,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   .single-footer-widget .info.error {
     color: red; }
 .single-footer-widget .click-btn {
-  background-color: #17417f;
+  background-color: #fff;
   color: #fff;
   border-radius: 0;
   border-top-left-radius: 0px;
@@ -3286,31 +3287,31 @@ body.mobile-nav-active #mobile-nav-toggle {
 .single-footer-widget ::-moz-selection {
   /* Code for Firefox */
   background-color: #191919 !important;
-  color: #777777; }
+  color: #fff; }
 .single-footer-widget ::selection {
   background-color: #191919 !important;
-  color: #777777; }
+  color: #fff; }
 .single-footer-widget ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
-  color: #777777;
+  color: #fff;
   font-weight: 300; }
 .single-footer-widget :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: #777777;
+  color: #fff;
   opacity: 1;
   font-weight: 300; }
 .single-footer-widget ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: #777777;
+  color: #fff;
   opacity: 1;
   font-weight: 300; }
 .single-footer-widget :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #777777;
+  color: #fff;
   font-weight: 300; }
 .single-footer-widget ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #777777;
+  color: #fff;
   font-weight: 300; }
 @media (max-width: 991.98px) {
   .single-footer-widget {
@@ -3324,6 +3325,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px; }
   .footer-text a,
   .footer-text i {
-    color: #17417f; }
+    color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
