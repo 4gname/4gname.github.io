@@ -2131,7 +2131,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-size: 100%;
   position: relative; }
   .home-banner-area .fullscreen {
-    height: 700px; }
+    height: 500px; }
     @media (max-width: 1024px) {
       .home-banner-area .fullscreen {
         height: 600px; } }
@@ -2155,28 +2155,13 @@ body.mobile-nav-active #mobile-nav-toggle {
         padding-left: 29%; } }
         .home-banner-area .social-icons {
     position: absolute;
-    top: 43%;
-    left: 0px;
+    top: 60px;
+    left: -150px;
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
     transform: rotate(-90deg); }
-    @media (min-width: 2101px) {
-      .home-banner-area .social-icons {
-        left: 17%; } }
-    @media (max-width: 1480px) {
-      .home-banner-area .social-icons {
-        left: -80px; } }
-    @media (max-width: 1350px) {
-      .home-banner-area .social-icons {
-        left: -100px; } }
-    @media (max-width: 1199px) {
-      .home-banner-area .social-icons {
-        left: -140px; } }
-    @media (max-width: 1024px) {
-      .home-banner-area .social-icons {
-        display: none; } }
     .home-banner-area .social-icons ul li {
       font-size: 14px;
       display: inline;
