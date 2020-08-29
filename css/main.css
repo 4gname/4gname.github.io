@@ -774,10 +774,10 @@ th {
   transition: all 0.4s ease-in !important; }
 
 .section-gap {
-  padding: 140px 0; }
+  padding: 80px 0; }
   @media (max-width: 991px) {
     .section-gap {
-      padding: 70px 0; } }
+      padding: 0px 0; } }
 
 .section-gap-top {
   padding-top: 140px; }
@@ -834,6 +834,7 @@ th {
 .primary-btn {
   color: #242429;
   padding: 0 42px;
+  margin-right: 80px;
   background: transparent;
   overflow: hidden;
   border-radius: 0px;
