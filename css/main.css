@@ -2081,7 +2081,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #header {
-  padding: 0px 0px 27px 0px;
+  padding: 0px 0px 20px 0px;
   position: relative;
   left: 0;
   top: 0;
@@ -2089,10 +2089,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   background: #fff;
-  margin-bottom: 31px; }
-  @media (max-width: 1665px) {
-    #header {
-      margin-bottom: 0px; } }
+  margin-top: 10px; }
 
 #header.header-scrolled {
   position: relative;
@@ -2103,11 +2100,9 @@ h1, h2, h3, h4, h5, h6 {
     background: #242429; }
 
 #logo {
+  margin-top: 11px;
   margin-left: 15px;
   scale: 10%; }
-  @media (max-width: 673px) {
-    #logo {
-      margin-left: 20px; } }
 
 #header #logo h1 {
   font-size: 34px;
@@ -2126,10 +2121,6 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo img {
   padding: 0;
   margin: 0; }
-
-@media (max-width: 768px) {
-  #header #logo h1 {
-    font-size: 28px; }
 
   #header #logo img {
     max-height: 40px; } }
@@ -2189,6 +2180,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Nav Meu Container */
 #nav-menu-container {
   margin: 0;
+  margin-right: auto;
   margin-left: auto; }
 
 .nav-menu a {
@@ -2535,7 +2527,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .slider{
   height:680px;
-  background-image:url('img/banner-img.png');
   background-size:cover;
   background-position:center;
 }
