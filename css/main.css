@@ -128,7 +128,7 @@ h6 {
 .p-size{
   font-family: "Play", sans-serif;
   color: #000;
-font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .p-black{
@@ -3550,3 +3550,133 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
     top: 2em;
    }
+
+   /**********popup links**********/
+.link_group {
+margin:20px auto;
+width:555px;
+text-align:center;
+}
+.link_group a {
+margin:0 20px;
+padding:5px 15px;
+color:#000;
+font-weight:bold;
+display:inline-block;
+vertical-align:top;
+*display:inline;
+*zoom:1;
+position:relative;
+text-decoration:none;
+text-transform:uppercase;
+border:1px solid #ccc;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+border-radius:3px;
+behavior: url(PIE.htc);
+}
+.link_group a:hover {
+color:#cc0000;
+}
+
+/**********All styles popup**********/
+.popup {
+padding:5px 15px 15px;
+position:fixed;
+top:100px;
+left:50%;
+display:none;
+overflow:hidden;
+border:1px solid #ccc;
+background:#fff;
+z-index:100;
+behavior: url(PIE.htc);
+}
+.popup a.close {
+width:16px;
+height:16px;
+display:block;
+text-indent:-9999px;
+position:absolute;
+top:10px;
+right:10px;
+background:url(../img/close.png) no-repeat;
+}
+
+/**********popup with tabs**********/
+.tabs_info {
+margin-left:-40%;
+width:80%;
+}
+/*tabs links*/
+.selectTabs {
+margin:10px 0 0;
+width:100%;
+}
+.lineTabs {
+width:100%;
+float:left;
+list-style:none;
+}
+
+
+.lineTabs a {
+padding:4px 15px;
+display:block;
+text-decoration:none;
+color:#000;
+font-weight:bold;
+font-size:10px;
+text-transform:uppercase;
+}
+/*tabs content*/
+.tab_content {
+width:100%;
+float:left;
+position:relative;
+behavior: url(PIE.htc);
+}
+.tab_content div{
+display:none;
+}
+.tab_content p {
+margin-left: 20px;
+
+}
+.tab_content .tab1 {
+display:block;
+}
+.tab_content .tab1, .tab_content .tab2 {
+padding:10px 5px;
+}
+.tab_content img {
+margin:0 10px 5px 0;
+float:left;
+}
+
+/**********overlay styles**********/
+#overlay {
+width:100%;
+height:100%;
+position:fixed;
+top:0;
+left:0;
+display:none;
+background:#000;
+opacity:.8;
+}
+
+.scrollbox {
+ overflow: auto;
+ top: 5%;
+ max-height: 90%;
+ background-attachment: local, local, scroll, scroll;
+}
+
+.cl {
+  font-family: "Play", sans-serif;
+  color: #000;
+  font-weight:bold;
+  padding-top: 20px;
+  font-size: 1.5em;
+}
