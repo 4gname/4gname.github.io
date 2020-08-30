@@ -1034,6 +1034,7 @@ th {
 
 .primary-btn-home {
   color: #242429;
+  margin-right: 10px;
   padding: 0 42px;
   background: transparent;
   overflow: hidden;
@@ -2647,11 +2648,42 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   font-size: 60px;
   font-weight: 600;
-  margin: 0 0 30px;
+  margin: 0 0 8px;
 }
 .slider p{
   color:#fff;
 }
+.slider .social-icons {
+    position: absolute;
+    top: 290px;
+    left: -150px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+    .slider .social-icons ul li {
+      font-size: 14px;
+      display: inline;
+      margin-right: 40px; }
+      @media (max-width: 576px) {
+        .slider .social-icons ul li {
+          font-size: 12px;
+          margin: 0 1px; } }
+      .slider .social-icons ul li a {
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        font-size: 14px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        .slider .social-icons ul li a:hover {
+          color: #fff;}
+        .slider .social-icons ul li a i {
+          margin-right: 8px; }
+
 .slider .button{
   margin-top:30px;
 }
