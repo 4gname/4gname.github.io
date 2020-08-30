@@ -2147,6 +2147,7 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap; }
 
 .nav-menu > li {
+  margin-top: 12px;
   float: left; }
 
 .nav-menu li:hover > ul,
@@ -3523,5 +3524,23 @@ h1, h2, h3, h4, h5, h6 {
  width: 100%;
 }
 
-
-/*# sourceMappingURL=main.css.map */
+[data-tooltip] {
+    position: relative;
+   }
+   [data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    width: 120px;
+    left: 0; top: 0;
+    background: #17417f;
+    color: #fff;
+    padding: 0.5em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.3s;
+   } 
+   [data-tooltip]:hover::after {
+    opacity: 1;
+    top: 2em;
+   }
