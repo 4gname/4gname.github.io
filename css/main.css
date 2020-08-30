@@ -2340,8 +2340,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff; }
 
 .home-banner-area {
-  background: url(../img/banner-img.png) no-repeat;
-  background-size: 150%;
   position: relative; }
   .home-banner-area .fullscreen {
     height: 1000px; }
@@ -2623,6 +2621,64 @@ body.mobile-nav-active #mobile-nav-toggle {
         font-size: 13px; }
       .pricing_item ul li .cross {
         color: #17417f; }
+
+.slider{
+  position:relative;
+}
+.slider:before{
+  position:absolute;
+  left:0;
+  top:0;
+  content:"";
+  height:100%;
+  width:100%;
+  background:#000;
+  opacity:0.4;
+}
+.slider{
+  height:680px;
+  background-size:cover;
+  background-position:center;
+}
+.slider .text {
+  margin-top: 227px;
+}
+.slider h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+.slider p{
+  color:#fff;
+}
+.slider .button{
+  margin-top:30px;
+}
+.slider .button .btn{
+  margin-right:10px;
+  background:#fff;
+  color:#333;
+  border-radius:0px;
+}
+.slider .button .btn:last-child{
+  margin-right:0px;
+}
+.slider .button .btn i{
+  margin-right:7px;
+}
+.slider .button .btn:hover{
+  color:#fff;
+  background:#42bc7f;
+}
+.slider .button .primary{
+  background:#42bc7f;
+  color:#fff;
+}
+.slider .button .primary:hover{
+  color:#333;
+  background:#fff;
+}
 
 .blog-area {
   padding-bottom: 110px; }
@@ -3540,5 +3596,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   .footer-text a,
   .footer-text i {
     color: #fff; }
+
+
 
 /*# sourceMappingURL=main.css.map */
