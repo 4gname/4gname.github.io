@@ -774,7 +774,8 @@ th {
   transition: all 0.4s ease-in !important; }
 
 .section-gap {
-  padding: 80px 0; }
+  padding: 80px 0;
+  justify-content: center; }
   @media (max-width: 991px) {
     .section-gap {
       padding: 80px 0; } }
@@ -834,7 +835,7 @@ th {
 .primary-btn {
   color: #242429;
   padding: 0 42px;
-  margin-right: 80px;
+  margin-right: 10px;
   background: transparent;
   overflow: hidden;
   border-radius: 0px;
@@ -2435,7 +2436,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*-------- Start About Area ------------*/
 .about-area .section-title {
-  margin-bottom: 0; }
+  margin-bottom: 0;  }
   @media (max-width: 1024px) {
     .about-area .section-title {
       padding-bottom: 0px; } }
@@ -3630,6 +3631,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   .footer-text i {
     color: #fff; }
 
+
+.img-scale {
+ width: 100%;
+}
 
 
 /*# sourceMappingURL=main.css.map */
