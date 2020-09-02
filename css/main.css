@@ -2201,7 +2201,8 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
   font-family: "Play", sans-serif; }
   .nav-menu a.active, .nav-menu a:hover {
-    color: #17417f !important; }
+    color: #17417f !important;
+    font-weight: bold; }
 .nav-menu.white a {
   color: #fff; }
 
@@ -3679,4 +3680,118 @@ opacity:.8;
   font-weight:bold;
   padding-top: 20px;
   font-size: 1.5em;
+}
+
+.wiki {
+  margin:0px;
+  padding:0px;
+  color: black;
+} 
+.wiki html,body{
+  height:100%;
+  min-height:100%;
+}
+
+.wiki #wiki-content{
+  position:relative;
+  min-height:100%;
+  width:100%;
+}
+
+.board img {
+  box-shadow: 0 0 2px 1px rgba(0,0,0,.6);
+  position: relative;
+  z-index: -2;
+}
+
+.wiki #bg-left{
+  position:absolute;
+  top:0px;left:0px;
+  bottom:0px;width:65%;
+  border-right: 5px solid rgba(0,0,0,0.03);
+  z-index:1;
+  background: #fff;
+}
+
+.wiki #content-left{
+  position:relative;
+  margin:2%;width:60%;
+
+  float:left;
+  z-index:2;
+}
+
+.wiki #bg-right{
+  position:absolute;
+  top:0px;right:0px;
+  bottom:0px;width:35%;
+  z-index:1;
+  background: #fff;
+}
+
+.wiki #content-right{
+  position:relative;
+  text-align: center;
+  margin:2.5%;
+  width:30%;
+  float:right;
+  z-index:2;
+}
+
+.wiki #separate{
+  position:relative;
+  height:0px;width:0px;
+  z-index:0;
+}
+
+.wiki #footer{
+  position:relative;
+  height:0px;
+  clear:both;
+}
+
+/* Style the tab */
+.tab-wiki {
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab-wiki button {
+  background-color: #fff;
+  float: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  margin-left: -5px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab-wiki button:hover {
+  color: white;
+  background-color: #17417f;
+}
+
+/* Create an active/current tablink class */
+.tab-wiki button.active {
+  color: white;
+  font-weight: bold;
+  background-color: #17417f;
+}
+
+/* Style the tab content */
+.tabcontent-wiki {
+  display: none;
+}
+
+.tabcontent-wiki2 {
+  display: none;
+  animation: fadeEffect 1.5s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
