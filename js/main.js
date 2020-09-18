@@ -382,35 +382,45 @@ $(document).ready(function() {
   });
 });
 
-$(function () {
-  //script for popups
-  $('a.show_popup').click(function () {
-    $('div.'+$(this).attr("rel")).fadeIn(500);
-    $("body").append("<div id='overlay'></div>");
-    $('#overlay').show().css({'filter' : 'alpha(opacity=80)'});
-    return false;       
-  }); 
-  $('a.close').click(function () {
-    $(this).parent().fadeOut(100);
-    $('#overlay').remove('#overlay');
-    return false;
-  });
-  
-  //script for tabs
-  $("div.selectTabs").each(function () {
-    var tmp = $(this);
-    $(tmp).find(".lineTabs li").each(function (i) {
-      $(tmp).find(".lineTabs li:eq("+i+") a").click(function(){
-        var tab_id=i+1;
-        $(tmp).find(".lineTabs li").removeClass("active");
-        $(this).parent().addClass("active");
-        $(tmp).find(".tab_content div").stop(false,false).hide();
-        $(tmp).find(".tab"+tab_id).stop(false,false).fadeIn(300);
-        return false;
-      });
-    });
-  });
-}); 
+
+$(document).ready(function($) {
+	$('.popup-open').click(function() {
+    disableScrolling()
+		$('.popup-fade').fadeIn();
+		return false;
+	});	
+	
+	$('.popup-close').click(function() {
+    enableScrolling()
+		$(this).parents('.popup-fade').fadeOut();
+		return false;
+	});		
+ 
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+      e.stopPropagation();
+      enableScrolling()
+			$('.popup-fade').fadeOut();
+		}
+	});
+	
+	$('.popup-fade').click(function(e) {
+		if ($(e.target).closest('.popup').length == 0) {
+      enableScrolling()
+			$(this).fadeOut();					
+		}
+	});
+});
+
+function disableScrolling(){
+  var x=window.scrollX;
+  var y=window.scrollY;
+  window.onscroll=function(){window.scrollTo(x, y);};
+}
+
+function enableScrolling(){
+  window.onscroll=function(){};
+}
 
 
 function openCity(evt, cityName) {
@@ -442,3 +452,26 @@ function openCity(evt, cityName) {
 }
 
 document.getElementById("defaultOpen").click();
+
+$(document).ready(function($) {
+	// Клик по ссылке "Закрыть".
+	$('.close').click(function() {
+		$(this).parents('.popup-fade').fadeOut();
+		return false;
+	});        
+ 
+	// Закрытие по клавише Esc.
+	$(document).keydown(function(e) {
+		if (e.keyCode === 27) {
+			e.stopPropagation();
+			$('.popup-fade').fadeOut();
+		}
+	});
+	
+	// Клик по фону, но не по окну.
+	$('.popup-fade').click(function(e) {
+		if ($(e.target).closest('.popup').length == 0) {
+			$(this).fadeOut();					
+		}
+	});	
+});
