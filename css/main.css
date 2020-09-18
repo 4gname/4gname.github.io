@@ -3390,12 +3390,13 @@ color:#cc0000;
   bottom: 5%;
 	margin-left: -200px;	
 	background: #fff;
-	border: 1px solid orange;
+	border: 1px solid gray;
 	border-radius: 4px; 
 	z-index: 99999;
   opacity: 1;	
   overflow: auto;
 }
+
 .popup .cl {
   padding-top: 10px;
   margin-bottom: 0;
@@ -3418,9 +3419,14 @@ color:#cc0000;
   margin-bottom: 0;
 }
 .popup-close {
-	position: absolute;
-	top: 10px;
-	right: 10px;
+  width:16px;
+  height:16px;
+  display:block;
+  text-indent:-9999px;
+  position:absolute;
+  top:10px;
+  right:10px;
+  background:url(../img/close.png) no-repeat;
 }
 
 .wiki {
